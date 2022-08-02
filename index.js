@@ -56,6 +56,8 @@ const unsubscribe = store.subscribe(() => console.log('udpated state ', store.ge
 // store.dispatch(orderCake())
 // store.dispatch(restockCake(3))
 
+// Not so useful now , all it does is it binds the functions to dispatch so the code looks a little cleaner
+
 const actions = bindActionCreators({ orderCake, restockCake }, store.dispatch)
 
 actions.orderCake()
